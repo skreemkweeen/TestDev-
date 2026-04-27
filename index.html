@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Vanta Studio — Luxury interior design for private residences, hospitality, and commercial spaces." />
+  <title>Vanta Studio — Luxury Interior Design</title>
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Design System + Styles -->
+  <link rel="stylesheet" href="styles/design-system.css" />
+  <link rel="stylesheet" href="styles/homepage.css" />
+
+  <!-- Favicon placeholder -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>◆</text></svg>" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" aria-hidden="true">
+    <div class="cursor__dot" style="position:fixed;"></div>
+  </div>
+  <div class="cursor__ring" aria-hidden="true"></div>
+
+  <!-- ════════════════════════════════════════════════════
+       01. NAVIGATION
+  ════════════════════════════════════════════════════ -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <a href="/" class="nav__wordmark" aria-label="Vanta Studio home">
+      Vanta<span>.</span>Studio
+    </a>
+
+    <ul class="nav__links">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#about">Studio</a></li>
+    </ul>
+
+    <a href="#contact" class="nav__cta">Inquire</a>
+
+    <button
+      class="nav__menu-toggle"
+      aria-label="Open navigation"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+      <span style="width:60%"></span>
+    </button>
+  </nav>
+
+  <main>
+
+    <!-- ════════════════════════════════════════════════════
+         02. HERO
+    ════════════════════════════════════════════════════ -->
+    <section class="hero" id="top" aria-labelledby="hero-headline">
+      <div class="hero__media" aria-hidden="true">
+        <!--
+          Replace src with a real image.
+          Placeholder: a rich dark interior — think Axel Vervoordt, Vincent Van Duysen.
+        -->
+        <img
+          src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1800&q=85&auto=format&fit=crop"
+          alt="Luxury interior — Vanta Studio"
+          loading="eager"
+          fetchpriority="high"
+        />
+      </div>
+
+      <div class="hero__content">
+        <div class="hero__eyebrow" aria-hidden="true">
+          <span class="hero__eyebrow-line"></span>
+          <span class="hero__eyebrow-text">Est. 2016 — New York &amp; London</span>
+        </div>
+
+        <h1 class="hero__headline" id="hero-headline">
+          Spaces that hold<br />
+          <em>weight and silence</em>
+        </h1>
+
+        <p class="hero__subline">
+          We design environments where luxury is experienced through restraint —
+          every material chosen, every proportion considered.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#work" class="btn btn--primary">
+            View Our Work
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M3 8h10M9 4l4 4-4 4"/>
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn--ghost">
+            Start a Project
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <span class="hero__scroll-label">Scroll</span>
+        <span class="hero__scroll-line"></span>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════
+         03. BRAND STATEMENT
+    ════════════════════════════════════════════════════ -->
+    <section class="statement" aria-labelledby="statement-heading">
+      <div class="statement__inner">
+
+        <div class="statement__label" data-reveal>
+          <span class="divider"></span>
+          <span class="statement__label-text">Our Philosophy</span>
+        </div>
+
+        <p class="statement__body" id="statement-heading" data-reveal data-reveal-delay="1">
+          True luxury is not decoration — it is the feeling of a room
+          that has been <em>completely understood.</em> We work at the
+          intersection of architecture, craft, and lived experience
+          to create interiors that are both timelessly beautiful and
+          deeply personal.
+        </p>
+
+        <div class="statement__aside" data-reveal data-reveal-delay="2">
+          <div class="statement__stat">
+            <span class="statement__stat-number">140+</span>
+            <span class="statement__stat-label">Projects Completed</span>
+          </div>
+          <div class="statement__stat">
+            <span class="statement__stat-number">18</span>
+            <span class="statement__stat-label">Countries</span>
+          </div>
+          <div class="statement__stat">
+            <span class="statement__stat-number">12</span>
+            <span class="statement__stat-label">Industry Awards</span>
+          </div>
+          <div class="statement__stat">
+            <span class="statement__stat-number">9</span>
+            <span class="statement__stat-label">Years Studio</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════
+         04. FEATURED WORK
+    ════════════════════════════════════════════════════ -->
+    <section class="work" id="work" aria-labelledby="work-title">
+      <div class="work__header">
+        <h2 class="work__title" id="work-title" data-reveal>
+          Selected<br />
+          Projects
+        </h2>
+        <a href="/work" class="work__link" data-reveal data-reveal-delay="1">
+          View All Work
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M3 8h10M9 4l4 4-4 4"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="work__grid">
+
+        <!-- Card 1 — Hero project -->
+        <article class="work-card" data-reveal tabindex="0" role="article">
+          <div class="work-card__media">
+            <img
+              src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=900&q=80&auto=format&fit=crop"
+              alt="West Village Penthouse interior"
+              loading="lazy"
+            />
+            <div class="work-card__overlay" aria-hidden="true"></div>
+          </div>
+          <div class="work-card__info">
+            <p class="work-card__category">Residential · Penthouse</p>
+            <h3 class="work-card__title">West Village Penthouse</h3>
+            <p class="work-card__location">New York, NY — 2024</p>
+            <span class="work-card__cta" aria-hidden="true">
+              View Project
+              <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M3 8h10M9 4l4 4-4 4"/>
+              </svg>
+            </span>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="work-card" data-reveal data-reveal-delay="1" tabindex="0" role="article">
+          <div class="work-card__media">
+            <img
+              src="https://images.unsplash.com/photo-1600210492493-0946911123ea?w=700&q=80&auto=format&fit=crop"
+              alt="Marais Hôtel Particulier interior"
+              loading="lazy"
+            />
+            <div class="work-card__overlay" aria-hidden="true"></div>
+          </div>
+          <div class="work-card__info">
+            <p class="work-card__category">Hospitality · Boutique Hotel</p>
+            <h3 class="work-card__title">Marais Hôtel Particulier</h3>
+            <p class="work-card__location">Paris, France — 2023</p>
+            <span class="work-card__cta" aria-hidden="true">
+              View Project
+              <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M3 8h10M9 4l4 4-4 4"/>
+              </svg>
+            </span>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="work-card" data-reveal data-reveal-delay="2" tabindex="0" role="article">
+          <div class="work-card__media">
+            <img
+              src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&q=80&auto=format&fit=crop"
+              alt="Notting Hill Georgian townhouse interior"
+              loading="lazy"
+            />
+            <div class="work-card__overlay" aria-hidden="true"></div>
+          </div>
+          <div class="work-card__info">
+            <p class="work-card__category">Residential · Townhouse</p>
+            <h3 class="work-card__title">Notting Hill Georgian</h3>
+            <p class="work-card__location">London, UK — 2024</p>
+            <span class="work-card__cta" aria-hidden="true">
+              View Project
+              <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M3 8h10M9 4l4 4-4 4"/>
+              </svg>
+            </span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════
+         05. SERVICES
+    ════════════════════════════════════════════════════ -->
+    <section class="services" id="services" aria-labelledby="services-title">
+      <div class="container">
+
+        <div class="services__header" data-reveal>
+          <div>
+            <div class="services__eyebrow">
+              <span class="divider"></span>
+              <span class="text-xs tracking-caps text-secondary">What We Offer</span>
+            </div>
+            <h2 class="services__title" id="services-title">
+              Full-spectrum<br />
+              design services
+            </h2>
+          </div>
+          <p class="services__intro">
+            From initial concept through final installation, we provide a
+            seamless, white-glove process tailored to each client's vision.
+          </p>
+        </div>
+
+        <div class="services__grid">
+
+          <div class="service-card" data-reveal>
+            <div class="service-card__number" aria-hidden="true">01</div>
+            <h3 class="service-card__title">Interior Architecture</h3>
+            <p class="service-card__desc">
+              Structural reconfigurations, spatial planning, and the
+              dialogue between architecture and interior — approached
+              as a single unified discipline.
+            </p>
+          </div>
+
+          <div class="service-card" data-reveal data-reveal-delay="1">
+            <div class="service-card__number" aria-hidden="true">02</div>
+            <h3 class="service-card__title">Residential Design</h3>
+            <p class="service-card__desc">
+              Primary residences, weekend retreats, and pied-à-terres
+              designed to feel both elevated and inhabited — spaces
+              that become more beautiful with time.
+            </p>
+          </div>
+
+          <div class="service-card" data-reveal data-reveal-delay="2">
+            <div class="service-card__number" aria-hidden="true">03</div>
+            <h3 class="service-card__title">Hospitality &amp; Commercial</h3>
+            <p class="service-card__desc">
+              Hotels, restaurants, and private members clubs where
+              every touchpoint — from threshold to suite — creates
+              a cohesive narrative experience.
+            </p>
+          </div>
+
+          <div class="service-card" data-reveal data-reveal-delay="1">
+            <div class="service-card__number" aria-hidden="true">04</div>
+            <h3 class="service-card__title">Furniture &amp; Object Curation</h3>
+            <p class="service-card__desc">
+              Custom furniture commissions, antique sourcing, and the
+              careful curation of objects that give a room its
+              particular intelligence.
+            </p>
+          </div>
+
+          <div class="service-card" data-reveal data-reveal-delay="2">
+            <div class="service-card__number" aria-hidden="true">05</div>
+            <h3 class="service-card__title">Art Advisory</h3>
+            <p class="service-card__desc">
+              We work closely with galleries, auction houses, and
+              artists to build collections that are inseparable
+              from the spaces they inhabit.
+            </p>
+          </div>
+
+          <div class="service-card" data-reveal data-reveal-delay="3">
+            <div class="service-card__number" aria-hidden="true">06</div>
+            <h3 class="service-card__title">Project Management</h3>
+            <p class="service-card__desc">
+              End-to-end coordination with contractors, craftspeople,
+              and suppliers — ensuring zero compromise between
+              vision and execution.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════
+         06. PROCESS
+    ════════════════════════════════════════════════════ -->
+    <section class="process" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <div class="process__inner">
+
+          <aside class="process__aside" data-reveal>
+            <div class="process__eyebrow">
+              <span class="process__eyebrow-line"></span>
+              <span class="process__eyebrow-text">How We Work</span>
+            </div>
+            <h2 class="process__title" id="process-title">
+              A considered<br />
+              process, start<br />
+              to finish
+            </h2>
+          </aside>
+
+          <div class="process__steps" data-reveal data-reveal-delay="1">
+
+            <div class="process-step">
+              <span class="process-step__num">01</span>
+              <div class="process-step__body">
+                <h3 class="process-step__title">Discovery &amp; Vision</h3>
+                <p class="process-step__desc">
+                  We begin with deep listening. A series of in-depth consultations
+                  to understand how you live, what moves you, and what the space
+                  must ultimately become.
+                </p>
+              </div>
+            </div>
+
+            <div class="process-step">
+              <span class="process-step__num">02</span>
+              <div class="process-step__body">
+                <h3 class="process-step__title">Concept Development</h3>
+                <p class="process-step__desc">
+                  A spatial and material concept is developed — mood, palette,
+                  proportion, and narrative — presented as a cohesive story
+                  rather than a catalog of choices.
+                </p>
+              </div>
+            </div>
+
+            <div class="process-step">
+              <span class="process-step__num">03</span>
+              <div class="process-step__body">
+                <h3 class="process-step__title">Design Development</h3>
+                <p class="process-step__desc">
+                  Technical drawings, custom furniture design, material
+                  specification, and supplier coordination — every detail
+                  resolved before a single wall is touched.
+                </p>
+              </div>
+            </div>
+
+            <div class="process-step">
+              <span class="process-step__num">04</span>
+              <div class="process-step__body">
+                <h3 class="process-step__title">Installation &amp; Styling</h3>
+                <p class="process-step__desc">
+                  We oversee every stage of installation personally, including
+                  final art placement and object styling — ensuring the space
+                  is complete before handover.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════
+         07. STUDIO / ABOUT
+    ════════════════════════════════════════════════════ -->
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about__grid">
+
+          <div class="about__media" data-reveal>
+            <div class="about__media-frame">
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80&auto=format&fit=crop&crop=faces"
+                alt="Nadia Voss, Founder &amp; Creative Director of Vanta Studio"
+                loading="lazy"
+              />
+            </div>
+            <div class="about__media-accent" aria-hidden="true"></div>
+          </div>
+
+          <div class="about__content">
+
+            <div class="about__eyebrow" data-reveal>
+              <span class="divider"></span>
+              <span class="text-xs tracking-caps text-secondary">The Studio</span>
+            </div>
+
+            <h2 class="about__title" data-reveal data-reveal-delay="1" id="about-title">
+              Design rooted in<br />
+              <em>material honesty</em>
+            </h2>
+
+            <p class="about__body" data-reveal data-reveal-delay="2">
+              Vanta Studio was founded by Nadia Voss in 2016 with a conviction
+              that the finest interiors emerge from a profound respect for craft,
+              material, and the people who will inhabit them. Based between
+              New York and London, our team of eight designers approaches each
+              project as a collaboration — between client, architect, and maker.
+            </p>
+
+            <p class="about__signature" data-reveal data-reveal-delay="2">
+              — Nadia Voss, Founder &amp; Creative Director
+            </p>
+
+            <div class="about__credentials" data-reveal data-reveal-delay="3">
+              <div class="about__credential">
+                <span class="about__credential-val">AD100</span>
+                <span class="about__credential-key">Honoree 2023–24</span>
+              </div>
+              <div class="about__credential">
+                <span class="about__credential-val">ELLE Deco</span>
+                <span class="about__credential-key">Best New Studio 2021</span>
+              </div>
+              <div class="about__credential">
+                <span class="about__credential-val">BIID</span>
+                <span class="about__credential-key">Chartered Member</span>
+              </div>
+            </div>
+
+            <div data-reveal data-reveal-delay="4">
+              <a href="/about" class="btn btn--ghost" style="margin-top: var(--space-8);">
+                Meet the Studio
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <path d="M3 8h10M9 4l4 4-4 4"/>
+                </svg>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════
+         08. PRESS MARQUEE
+    ════════════════════════════════════════════════════ -->
+    <section class="press" aria-label="Press recognition">
+      <p class="press__label">As Seen In</p>
+      <div style="overflow:hidden;">
+        <div class="press__track" aria-hidden="true">
+          <span class="press__item">Architectural Digest</span>
+          <span class="press__divider">·</span>
+          <span class="press__item">Elle Decoration</span>
+          <span class="press__divider">·</span>
+          <span class="press__item">The World of Interiors</span>
+          <span class="press__divider">·</span>
+          <span class="press__item">Wallpaper*</span>
+          <span class="press__divider">·</span>
+          <span class="press__item">Vogue Living</span>
+          <span class="press__divider">·</span>
+          <span class="press__item">House &amp; Garden</span>
+          <span class="press__divider">·</span>
+          <span class="press__item">1stDibs Introspective</span>
+          <span class="press__divider">·</span>
+          <span class="press__item">Dezeen</span>
+          <span class="press__divider">·</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════
+         09. TESTIMONIALS
+    ════════════════════════════════════════════════════ -->
+    <section class="testimonials" aria-label="Client testimonials">
+      <div class="testimonials__inner">
+
+        <div style="position:relative; min-height: 200px;">
+
+          <div data-slide="0">
+            <blockquote class="testimonials__quote" data-reveal>
+              Working with Vanta Studio was unlike any creative relationship
+              we had known. They didn't just design our home — they understood it.
+            </blockquote>
+            <div class="testimonials__author" data-reveal data-reveal-delay="1">
+              <p class="testimonials__name">Alexandra &amp; James Thornton</p>
+              <p class="testimonials__role">West Village Penthouse, New York</p>
+            </div>
+          </div>
+
+          <div data-slide="1" style="position:absolute;top:0;left:0;right:0;opacity:0;pointer-events:none;transition:opacity 0.8s;">
+            <blockquote class="testimonials__quote">
+              The restraint they brought to the Marais project was extraordinary —
+              every decision was made with an almost sculptural precision.
+            </blockquote>
+            <div class="testimonials__author">
+              <p class="testimonials__name">Henri Beaumont</p>
+              <p class="testimonials__role">Hôtel Particulier, Paris</p>
+            </div>
+          </div>
+
+          <div data-slide="2" style="position:absolute;top:0;left:0;right:0;opacity:0;pointer-events:none;transition:opacity 0.8s;">
+            <blockquote class="testimonials__quote">
+              They have a rare ability to create environments that feel both
+              newly designed and as though they've always existed.
+            </blockquote>
+            <div class="testimonials__author">
+              <p class="testimonials__name">Catherine Wren</p>
+              <p class="testimonials__role">Notting Hill Georgian, London</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="testimonials__nav" aria-label="Testimonial navigation">
+          <button class="testimonials__dot active" aria-label="Testimonial 1"></button>
+          <button class="testimonials__dot" aria-label="Testimonial 2"></button>
+          <button class="testimonials__dot" aria-label="Testimonial 3"></button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════
+         10. CTA / CONTACT
+    ════════════════════════════════════════════════════ -->
+    <section class="cta" id="contact" aria-labelledby="cta-headline">
+      <div class="cta__inner">
+
+        <p class="cta__label" data-reveal>Begin a Conversation</p>
+
+        <h2 class="cta__headline" id="cta-headline" data-reveal data-reveal-delay="1">
+          Your vision.<br />
+          Our craft.
+        </h2>
+
+        <p class="cta__sub" data-reveal data-reveal-delay="2">
+          We accept a limited number of new commissions each year. Share your
+          project details and we will be in touch within 48 hours.
+        </p>
+
+        <form class="cta__form" data-reveal data-reveal-delay="3" novalidate>
+          <label for="cta-email" class="sr-only">Your email address</label>
+          <input
+            type="email"
+            id="cta-email"
+            class="cta__input"
+            placeholder="Your email address"
+            autocomplete="email"
+            required
+          />
+          <button type="submit" class="btn btn--primary">
+            Send Inquiry
+          </button>
+        </form>
+
+        <div class="cta__actions" data-reveal data-reveal-delay="4">
+          <a href="mailto:hello@vantastudio.com" class="btn btn--text" style="color:var(--color-text-secondary);">
+            hello@vantastudio.com
+          </a>
+          <span style="color:var(--color-border-dark);">—</span>
+          <a href="tel:+12125550110" class="btn btn--text" style="color:var(--color-text-secondary);">
+            +1 (212) 555–0110
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ════════════════════════════════════════════════════
+       11. FOOTER
+  ════════════════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="/" class="footer__wordmark" aria-label="Vanta Studio home">
+            Vanta<span>.</span>Studio
+          </a>
+          <p class="footer__tagline">
+            Luxury interior design for private residences,
+            hospitality, and commercial environments.
+            New York — London.
+          </p>
+        </div>
+
+        <div>
+          <p class="footer__col-title">Studio</p>
+          <ul class="footer__links">
+            <li><a href="/work">Work</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/press">Press</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer__col-title">Connect</p>
+          <ul class="footer__links">
+            <li><a href="#contact">Inquire</a></li>
+            <li><a href="mailto:hello@vantastudio.com">Email Us</a></li>
+            <li><a href="/careers">Careers</a></li>
+            <li><a href="/newsletter">Newsletter</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer__col-title">Locations</p>
+          <ul class="footer__links">
+            <li><a href="#">New York, NY</a></li>
+            <li><a href="#">London, UK</a></li>
+            <li><a href="#">Paris (by appointment)</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2025 Vanta Studio LLC. All rights reserved.</p>
+        <nav class="footer__social" aria-label="Social media">
+          <a href="#" class="footer__social-link">Instagram</a>
+          <a href="#" class="footer__social-link">Pinterest</a>
+          <a href="#" class="footer__social-link">LinkedIn</a>
+          <a href="#" class="footer__social-link">1stDibs</a>
+        </nav>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="scripts/interactions.js" defer></script>
+</body>
+</html>
